@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello World</title>
+  <style>
+    :root {
+      --bg-1: #0f2027;
+      --bg-2: #203a43;
+      --bg-3: #2c5364;
+      --text: #ffffff;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--bg-1), var(--bg-2), var(--bg-3));
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 8rem);
+      letter-spacing: 0.04em;
+      margin: 0;
+      text-align: center;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+  <!-- Only browser technologies used: HTML + CSS -->
+  <!-- You can open this file directly in a browser. -->
+</head>
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>
+
